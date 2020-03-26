@@ -6,7 +6,7 @@ export default {
     },
     read({commit, /*state*/}, /*payload*/) {
         console.log('in action');
-        axios.get(`/bil/list`)
+        axios.get(`/bil/freeboard`)
             .then((res) => {
                 commit('read_success', res);
             })
